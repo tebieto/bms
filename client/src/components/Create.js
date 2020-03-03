@@ -49,6 +49,7 @@ class Create extends Component {
                                 publisher.value = null;
                                 published_year.value = "";
                             }}>
+
                                 <div className="form-group">
                                     <label htmlFor="isbn">ISBN:</label>
                                     <input type="text" className="form-control" name="isbn" ref={node => {
@@ -76,12 +77,13 @@ class Create extends Component {
                                 <div className="form-group">
                                     <label htmlFor="author">Publisher:</label>
                                     <input type="text" className="form-control" name="publisher" ref={node => {
-                                        publisher = node;
+                                
+                                publisher = node;
                                     }} placeholder="Publisher" />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="author">Published Year:</label>
-                                    <input type="number" className="form-control" name="published_year" ref={node => {
+                                    <input type="number" className="form-control" max='2020' name="published_year" ref={node => {
                                         published_year = node;
                                     }} placeholder="Published Year" />
                                 </div>
